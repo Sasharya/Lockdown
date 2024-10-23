@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starchest - Lockdown</title>
+    <!-- Fonte Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="/static/favicon.ico" type="image/png">
+    <!-- Biblioteca de Animações AOS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Container Adicionado -->
+    <div class="container"></div>
+
+    <!-- Cabeçalho Moderno com Navegação e Abas -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a class="logo-link">
+                    <img src="/static/logo.png" alt="Starchest Logo" class="logo" />
+                </a>
+                <div class="menu-icon" id="menu-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <form action="/<lang>" method="get" class="lang-container">
+                        <button type="submit" formaction="/"><img src="/static/usa.svg" class="img"/></button>
+                        <button type="submit" formaction="/pt"><img src="/static/brasil.svg" class="img"/></button>
+                        <button type="submit" formaction="/es"><img  src="/static/espanha.svg" class="img"/></button>
+                    </form>
+                    <li class="nav-item tab-link active" data-tab="project"><a href="#project" class="nav-link">Nuestro Proyecto</a></li>
+                    <li class="nav-item tab-link" data-tab="starchest"><a href="#starchest"
+                            class="nav-link">Starchest</a></li>
+                    <li class="nav-item tab-link" data-tab="contato_geral"><a href="#contato_geral"
+                            class="nav-link">Contáctanos</a></li>
+                    <li class="nav-item tab-link" data-tab="demonstracao_teste"><a href="#demonstracao_teste"
+                            class="nav-link">¡Prueba Gratis!</a></li>
+                    <li class="nav-item tab-link" data-tab="proposta_comercial"><a href="#proposta_comercial"
+                            class="nav-link">Interesados</a></li>
+                    <li class="nav-item tab-link" data-tab="feedback"><a href="#feedback" class="nav-link">Feedback</a>
+                    </li>
+                    <li class="nav-item tab-link" data-tab="cadastro_interesse"><a href="#cadastro_interesse"
+                            class="nav-link">Regístrate para Recibir Actualizaciones</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo das Seções -->
+    <!-- Nosso Projeto -->
+    <section id="project" class="tab-content active">
+        <h2 class="section-title typing-effect">Lockdown</h2>
+        <p class="section-description"> ¡Seguridad global para tu negocio! <br> Descubre cómo estamos revolucionando la seguridad digital con soluciones innovadoras y avanzadas.</p>
+
+        <div class="masonry-layout">
+            <div class="masonry-item" data-aos="fade-up">
+                <img src="/static/lokcdown.jpg" alt="Projeto 1" class="project-image">
+                <div class="project-text">
+                    <h3>¿Qué es?</h3>
+                    <p>Lockdown es un innovador sistema de trabajo remoto diseñado para garantizar la protección de datos sensibles a través de la Prevención de Pérdida de Datos (DLP) y procesos robustos de respaldo y recuperación. Con un enfoque en la seguridad y la eficiencia, el sistema integra tecnologías avanzadas para proporcionar una experiencia de trabajo segura y colaborativa, permitiendo que empresas de todos los tamaños operen con confianza en un entorno digital.
+</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-aos="fade-up">
+                <div class="project-text">
+                    <h3>Principales características.</h3>
+                    <p>Las principales características de nuestro proyecto son:"</p>
+                    <ul class="list-security">
+                        <li>Seguridad de Acceso: Lockdown establece un límite en los intentos de contraseña, garantizando que el acceso no autorizado se bloquee de inmediato.</li>
+                        <li>Cumplimiento de Seguridad: El sistema implementa protocolos de seguridad como SSL/TLS y firmas digitales, garantizando que las comunicaciones y transacciones sean seguras y confiables.</li>
+                        <li>Gestión de Datos de Usuario: Lockdown facilita el acceso, inclusión, eliminación, exportación y disputa de los datos de usuario, asegurando la transparencia y el control completo sobre la información personal.</li>
+                    </ul>
+                </div>
+                <img src="/static/cyber.jpg" alt="Projeto 2" class="project-image">
+            </div>
+
+            <div class="masonry-item" data-aos="fade-up">
+                <div class="project-text">
+                    <ul class="list-security">
+                        <li>Integración de AWS: Lockdown integra servicios de AWS, como S3 para almacenamiento seguro de copias de seguridad, IAM para control de acceso, KMS para cifrado de datos, EC2 para ejecución en el backend, RDS para gestión de bases de datos y CloudWatch para monitoreo de seguridad.</li>
+                        <li>Tecnología de Última Generación: Lockdown utiliza Golang para la recuperación y DLP, Python para la criptografía y el monitoreo, React o Angular para el frontend, proporcionando una interfaz fácil de usar, y PostgreSQL como base de datos, asegurando la eficiencia en la gestión de datos.</li>
+                        <li>Modern Infrastructure: We use tools like Docker and Kubernetes to ensure a scalable and resilient infrastructure, capable of adapting to the constantly changing needs of businesses.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="project-technologies" data-aos="fade-up">
+                <div class="project-text">
+                    <h3>Tecnologías Utilizadas.</h3>
+                    <div class="technologies-grid">
+
+                        <!-- Back-End -->
+                        <div class="technology-category">
+                            <h4>Back-End</h4>
+                            <div class="technology-card">
+                                <i class="fab fa-golang shine"></i>
+                                <div class="technology-info">
+                                    <strong>Golang:</strong> Para el sistema de recuperación de datos y prevención de pérdida de datos (DLP)."
+                                </div>
+                            </div>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>Python:</strong> Para la criptografía y la supervisión del sistema.
+                                </div>
+                            </div>
+                            <div class="icons-container">
+                                <div class="shine">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Front-End -->
+                        <div class="technology-category">
+                            <h4>Front-End</h4>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>React:</strong> Interfaz de usuario..
+                                </div>
+
+                            </div>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>Angular:</strong> Interfaz de usuario.
+                                </div>
+                            </div>
+                            <div class="icons-container">
+                                <div class="shine">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="shine">
+                                    <i class="fab fa-angular"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Banco de Dados -->
+                        <div class="technology-category">
+                            <h4>Banco de Dados</h4>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>PostgreSQL:</strong> Gestión de bases de datos..
+                                </div>
+                            </div>
+                            <div class="icons-container">
+                                <div class="shine">
+                                    DB
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Componentes de Segurança -->
+                        <div class="technology-category">
+                            <h4>Componentes de seguridad.</h4>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>C++:</strong> Módulos de criptografía y protección de datos.
+                                </div>
+                            </div>
+                            <div class="icons-container">
+                                <div class="shine">
+                                    C++
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Infraestrutura -->
+                        <div class="technology-category">
+                            <h4>Infraestructura</h4>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>Docker:</strong> Gestión de contenedores.
+                                </div>
+                            </div>
+                            <div class="technology-card">
+                                <i class="fab fa-kubernetes shine"></i>
+                                <div class="technology-info">
+                                    <strong>Kubernetes:</strong>  Orquestación de contenedores.
+                                </div>
+                            </div>
+                            <div class="icons-container">
+                                <div class="shine">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Serviços AWS -->
+                        <div class="technology-category">
+                            <h4>AWS Services</h4>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>AWS S3:</strong> Almacenamiento seguro y escalable.
+                                </div>
+                            </div>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>AWS IAM:</strong>  Control de acceso detallado.
+                                </div>
+                            </div>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>AWS KMS:</strong> Administración de claves y encriptación
+                                </div>
+                            </div>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>AWS EC2:</strong> Ejecución del backend en Golang y Python.
+                                </div>
+                            </div>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>AWS RDS:</strong>  Gestión de bases de datos PostgreSQL.
+                                </div>
+                            </div>
+                            <div class="technology-card">
+                                <div class="technology-info">
+                                    <strong>AWS CloudWatch:</strong> Supervisión de registros y alertas de seguridad.
+                                </div>
+                            </div>
+                            <div class="icons-container">
+                                <div class="shine">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-technologies" data-aos="fade-up">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h3>El Futuro del Sistema.</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <p>Protección e integración del Sistema Administrativo Empresarial.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <p>Traducción a diferentes idiomas y mejora en la precisión con traductores.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <p>Planes para diferentes tamaños de negocio.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+
+                                    <i class="fas fa-satellite"></i>
+                                </div>
+                                <p>Seguimiento por satélite..</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <p>Servidores físicos en varios países.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <p>Desarrollo de un sistema de protección contra malware robusto.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <p>"Cifrado robusto y cumplimiento de múltiples regulaciones de protección de datos (GDPR).</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-fingerprint"></i>
+                                </div>
+                                <p>Sistema biométrico y supervisión centralizada."</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-vial"></i>
+                                </div>
+                                <p>Sandbox de pruebas de malware para documentos y archivos.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-link"></i>
+                                </div>
+                                <p>Verificación de enlaces para la protección contra fraudes.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <p>Computador central multitarea con varios sistemas operativos.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <p>Integración fluida con administradores de contraseñas como LastPass y 1Password.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="shine">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <p>Informe de cumplimiento personalizado adaptado a los estándares internacionales de protección de datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Starchest -->
+    <section id="starchest" class="tab-content">
+        <h2 class="section-title typing-effect neon-text">Starchest</h2>
+        <p class="section-description">En Starchest, ofrecemos una amplia gama de servicios diseñados para satisfacer las necesidades de nuestros clientes. ¡Explora algunos de los servicios que ofrecemos a continuación!</p>
+
+        <!-- Cards do Starchest -->
+        <div class="card-container">
+            <div class="card" data-aos="fade-up">
+                <div class="tools">
+                    <div class="circle">
+                        <span class="red box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="yellow box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="green box"></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Consultoría de Seguridad.</h3>
+                    <p class="card-description">"Evaluamos y mejoramos la seguridad digital de su empresa con soluciones personalizadas.</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <div class="tools">
+                    <div class="circle">
+                        <span class="red box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="yellow box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="green box"></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Soluciones en Inteligencia Artificial.</h3>
+                    <p class="card-description">Implementamos soluciones de IA que pueden transformar su negocio, desde chatbots de servicio al cliente hasta análisis de datos para una toma de decisiones más informada.</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <div class="tools">
+                    <div class="circle">
+                        <span class="red box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="yellow box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="green box"></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Servicios de Desarrollo Web</h3>
+                    <p class="card-description">Diseñamos sitios web modernos, responsivos y personalizados para elevar su presencia en línea y atraer más clientes. Nuestro enfoque está en ofrecer la mejor experiencia de usuario.</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <div class="tools">
+                    <div class="circle">
+                        <span class="red box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="yellow box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="green box"></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Soluciones de Negocios.</h3>
+                    <p class="card-description">Creamos sistemas a medida para satisfacer las necesidades únicas de su negocio, desde la gestión de procesos hasta la automatización de tareas, garantizando una mayor eficiencia y productividad.</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <div class="tools">
+                    <div class="circle">
+                        <span class="red box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="yellow box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="green box"></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Servicios de Consultoría de TI Integral.</h3>
+                    <p class="card-description">Proporcionamos consultoría experta para ayudar a su empresa a identificar áreas de mejora, implementar tecnologías de vanguardia y optimizar los procesos de TI.</p>
+                </div>
+            </div>
+
+            <!-- Adicione mais cards conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Contato Geral -->
+    <section id="contato_geral" class="tab-content">
+        <h2 class="section-title typing-effect">¡Te invitamos a conocernos!</h2>
+        <form onsubmit="enviarFormulario(event, 'contato_geral')" class="form" data-aos="fade-up">
+            <div class="form-title"><span>No dudes en</span></div>
+            <div class="title-2"><span>CONTACTAR</span></div>
+
+            <div class="input-container">
+                <input class="input-mail" type="email" placeholder="Por favor, ingresa tu email." required>
+            </div>
+
+            <section class="bg-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </section>
+
+            <div class="input-container">
+                <input class="input-pwd" type="text" placeholder="Introduce tu número de teléfono (opcional)">
+            </div>
+
+            <div class="input-container">
+                <input type="text" name="empresa" placeholder="Empresa" class="form-input">
+            </div>
+
+            <div class="input-container">
+                <textarea name="mensagem_assunto" placeholder="Mensaje / Asunto." class="form-textarea"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="submit">
+                <span class="sign-text">Enviar</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Teste Gratuito -->
+    <section id="demonstracao_teste" class="tab-content">
+        <h2 class="section-title typing-effect">¡Experimenta nuestras soluciones!</h2>
+        <form onsubmit="enviarFormulario(event, 'demonstracao_teste')" class="form" data-aos="fade-up">
+            <div class="form-title"><span>Descubre más sobre nuestro servicio.</span></div>
+            <div class="title-2"><span>¡Prueba ahora!</span></div>
+
+            <div class="input-container">
+                <input class="input-mail" type="email" placeholder="Por favor, ingresa tu email." required>
+            </div>
+
+            <section class="bg-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </section>
+
+            <div class="input-container">
+                <input class="input-pwd" type="text" placeholder="Introduce tu número de teléfono (opcional)">
+            </div>
+
+            <div class="input-container">
+                <input type="text" name="empresa" placeholder="Empresa" class="form-input">
+            </div>
+
+            <div class="input-container">
+                <input type="date" name="preferencia_data" class="form-input" required onclick="this.showPicker()">
+            </div>
+
+            <button type="submit" class="submit">
+                <span class="sign-text">Enviar</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Investidores -->
+    <section id="proposta_comercial" class="tab-content">
+        <h2 class="section-title typing-effect">¿Te gustaría financiar el proyecto?</h2>
+        <form onsubmit="enviarFormulario(event, 'proposta_comercial')" class="form" data-aos="fade-up">
+            <div class="form-title"><span>Conviértete en</span></div>
+            <div class="title-2"><span>INVERSOR</span></div>
+
+            <div class="input-container">
+                <input class="input-mail" type="email" placeholder="Por favor, ingresa tu email." required>
+            </div>
+
+            <section class="bg-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </section>
+
+            <div class="input-container">
+                <input class="input-pwd" type="text" placeholder="Introduce tu número de teléfono (opcional)" required>
+            </div>
+
+            <div class="input-container">
+                <input type="text" name="empresa" placeholder="Empresa" class="form-input" required>
+            </div>
+
+            <div class="input-container">
+                <select name="tipo_solucao" class="form-input" required>
+                    <option value="" disabled selected>Elige el tipo de solución</option>
+                    <option value="home_office">Home Office</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="ambos">Ambas Opiciones</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <textarea name="detalhes_adicionais" placeholder="Detalles adicionales (opcional)."
+                    class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="submit">
+                <span class="sign-text">Enviar</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Feedback -->
+    <section id="feedback" class="tab-content">
+        <h2 class="section-title typing-effect">¡Tu opinión es importante para nosotros!</h2>
+        <form onsubmit="enviarFormulario(event, 'feedback')" class="form" data-aos="fade-up">
+            <div class="form-title"><span>Díganos lo que piensa.</span></div>
+            <div class="title-2"><span>FEEDBACK</span></div>
+
+            <div class="input-container">
+                <input class="input-mail" type="email" placeholder="Por favor, ingresa tu email." required>
+            </div>
+
+            <section class="bg-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </section>
+
+            <div class="input-container">
+                <input type="text" name="empresa" placeholder="Empresa" class="form-input">
+            </div>
+
+            <div class="input-container">
+                <textarea name="comentarios_sugestoes" placeholder="Comentarios/Sugerencias"
+                    class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="submit">
+                <span class="sign-text">Enviar</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Cadastro de Interesse -->
+    <section id="cadastro_interesse" class="tab-content">
+        <h2 class="section-title typing-effect">¿Quieres saber más detalles?</h2>
+        <form onsubmit="enviarFormulario(event, 'cadastro_interesse')" class="form" data-aos="fade-up">
+            <div class="form-title"><span>¡Aquí para más información!</span></div>
+            <div class="title-2"><span>REGISTRARSE</span></div>
+
+            <div class="input-container">
+                <input class="input-mail" type="email" placeholder="Por favor, ingresa tu email." required>
+            </div>
+
+            <section class="bg-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </section>
+
+            <div class="input-container">
+                <input class="input-pwd" type="text" placeholder="Introduce tu número de teléfono (opcional)" required>
+            </div>
+
+            <div class="input-container">
+                <input type="text" name="empresa" placeholder="Company" class="form-input">
+            </div>
+
+            <div class="input-container">
+                <select name="area_interesse" class="form-input" required>
+                    <option value="" disabled selected>Seleccione el área de interés.</option>
+                    <option value="ciberseguranca">Cybersecurity</option>
+                    <option value="desenvolvimento">Desarrollo de Software.</option>
+                    <option value="monitoramento">Vigilancia Digital</option>
+                    <option value="ambos">Ambas Opiciones</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit">
+                <span class="sign-text">Enviar</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Script JavaScript para funcionalidade das abas, menu e animações -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/static/script.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

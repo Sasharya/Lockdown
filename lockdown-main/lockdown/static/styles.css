@@ -1,0 +1,329 @@
+/* General Styles */
+.header {
+    text-align: center;
+    place-items: center;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.801);
+    height: 70px;
+    padding-top: 1px;
+}
+
+.logo {
+    width: 900px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Updated font */
+    background-color: #f4f4f4; /* Lighter background */
+    color: #333; /* Darker text color for readability */
+    margin: 0;
+    background-image: url('Wall.jpg'); /* Use the correct syntax */
+}
+
+/* Banner styles */
+.baner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('worldwide.png');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+}
+
+.baner-content {
+    display: flex;
+    align-items: center;
+    position: relative; /* Allow for absolute positioning */
+}
+
+.logo {
+    width: 750px;
+    animation: slide-left 1s forwards; /* Move the logo left */
+}
+
+/* Text styles */
+.baner-text {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: fade-in-up 1s forwards 1s; /* Fade in while moving up after logo */
+    color: #c1c3c7;
+    font-size: 50px;
+}
+
+/* Fade in animation */
+.fade-in-up {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to its original position */
+}
+
+/* Animation for moving to the left */
+@keyframes slide-left {
+    0% {
+        transform: translateX(0); /* Start from center */
+    }
+    100% {
+        transform: translateX(-8vw); /* Move to the left */
+    }
+}
+
+/* Fade in and move up animation for the text */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(20px); /* Start from below */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to its original position */
+    }
+}
+
+/* When the animation is done, the text should become visible */
+.baner-content.visible {
+    opacity: 1; /* Show text */
+    transform: translateX(0); /* Reset position */
+}
+
+/* Content styles */
+.content {
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Move down */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animate opacity and position */
+    margin-top: 20px; /* Add some margin on top to separate from the banner */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content */
+}
+
+.content .tab-content {
+    max-width: 100%; /* Control the width of the tab content */
+    padding: 20px; /* Add padding for aesthetics */
+    background-color: none; /* White background for visibility */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.content.visible {
+    opacity: 1; /* Show content */
+    transform: translateY(0); /* Reset position */
+}
+
+/* Tab styles */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center; /* Centers the text */
+    font-weight: bold;  /* Makes the text bold */
+}
+
+/* Tabs Styling */
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center tabs */
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-link.active, .tab-link:hover {
+    background-color: #343a40;
+    color: white;
+    border-color: black;
+}
+
+.tab-content {
+    color: #ccc;
+    text-align: left;
+    display: none;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+textarea,
+select {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Banner styles for "Nosso Projeto" */
+.banner {
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the banner */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    color: #fff;
+    text-align: center; /* Center text in the banner */
+    background: linear-gradient(135deg, #004080, #007bff); /* Gradient background */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #007bff;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+    background-color: #e9ecef;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        width: 80%; /* Smaller logo size for mobile */
+    }
+    .baner {
+        height: 60vh; /* Adjust height for mobile */
+        background-size: cover; /* Keep cover for mobile */
+        padding: 0; /* Ensure no padding */
+        margin: 0; /* Ensure no margin */
+    }
+
+    .baner-text {
+        font-size: 28px; /* Adjust font size for mobile */
+    }
+
+    .content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+        margin-top: 10px; /* Adjust margin for mobile */
+    }
+
+    .tab-content {
+        padding: 20px; /* Adjust padding */
+        width: 100%; /* Full width on mobile */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="datetime-local"],
+    textarea,
+    select {
+        font-size: 0.9rem; /* Smaller input font size */
+    }
+
+    button {
+        font-size: 0.9rem; /* Smaller button font size */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjusted heading size */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjusted heading size */
+    }
+
+    p {
+        font-size: 14px; /* Smaller paragraph font size */
+    }
+
+    .icons {
+        flex-wrap: wrap; /* Wrap icons on smaller screens */
+        justify-content: center; /* Center icons */
+    }
+
+    .icon {
+        width: 40px; /* Adjust icon size */
+        height: 40px; /* Adjust icon size */
+    }
+}
